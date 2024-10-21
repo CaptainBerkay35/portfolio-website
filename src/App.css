@@ -60,3 +60,7 @@ section{
         display: block;
     }
 }
+.no-sticky .sticky__header {
+    position: static; /* This disables the sticky behavior */
+    box-shadow: none;  /* Remove shadow if needed */
+  }

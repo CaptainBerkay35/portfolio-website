@@ -18,6 +18,13 @@ const Portfolio = () => {
     setShowModal(true)
     setActiveId(id)
   }
+  useEffect(() => {
+    if (showModal) {
+      document.body.classList.add('no-sticky');
+    } else {
+      document.body.classList.remove('no-sticky');
+    }
+  }, [showModal]);
 
   useEffect(() => {
     if(selectedTab ==='all'){
